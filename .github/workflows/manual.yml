@@ -1,0 +1,26 @@
+name: CI - CD
+
+on:
+    push:
+        branches:
+            - "*"
+    pull_request:
+        branches:
+            - main
+
+env:
+    REGISTRY: docker.io
+    IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+    run_unit_test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout the code
+              uses: actions/checkout@v2
+            - name: Create fresh env to test
+              run: docker-compose -f docker-compose.yml up -d mongodb
+            - name: Install local dependencies
+              run: pip install -r api/requirements.txt
+            - name: Run unit test
+              run: pytest api
