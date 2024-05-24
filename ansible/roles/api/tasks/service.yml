@@ -3,9 +3,8 @@
     name: api
     image: jasminenguyen/api
     state: started
-    restart: true
+    restart_policy: always  # Corrected this line
     ports:
       - "80:80"
     env:
-      MONGODB_HOST : "172.17.0.1"
-    
+      MONGODB_HOST: "172.17.0.1"  # Ensured proper spacing around the colon
