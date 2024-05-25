@@ -80,9 +80,7 @@ Output:
 
       CMD ["npm", "start"]
       ```
-    -   **docker-compose** :[here](https://github.com/jasmine150720/vdt2024/blob/main/docker-compose.yml)
-
-    Here's a brief summary of the provided Docker Compose configuration:
+    -   **docker-compose** :[here](https://github.com/jasmine150720/vdt2024/blob/main/docker-compose.yml) . Here's a brief summary of the provided Docker Compose configuration:
         - Three services are defined: `react`, `fastapi`, and `mongodb`.
         - `react` service:
           - Builds the frontend container.
@@ -98,7 +96,7 @@ Output:
           - Initializes a MongoDB database named vdt2024.
         - Each service has a specified restart policy **unless-stopped** to ensure availability.
           
--   Output build command:
+-   Build command:
   ```
   docker-compose -f docker-compose.yml up --build
   ```  
