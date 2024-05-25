@@ -45,7 +45,8 @@ Output:
 
 -   File Dockerfile cho từng dịch vụ kế hệ thống với ba dịch vụ:
     -   api :
-      '''Hi heloo'''
+      ```Hi heloo
+      ```
     -   frontend : [react]
     -   docker-compose : [docker-compose.yml]
 
