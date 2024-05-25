@@ -8,7 +8,7 @@ from typing import List, Union, Optional, Dict, Any
 pydantic.json.ENCODERS_BY_TYPE[ObjectId] = str
 
 
-mongoHost = os.getenv("MONGODB_HOST", "localhost")
+mongoHost = os.getenv("MONGODB_HOST", "mongodb")
 url = f"mongodb://{mongoHost}:27017/vdt2024"
 client = motor.motor_asyncio.AsyncIOMotorClient(url)
 
