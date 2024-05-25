@@ -10,9 +10,9 @@
     - Allow viewing details, adding, deleting, and updating student information.
 
 - ### Design web application:
-    - Web Interface: *ReactJs* - Create flexible and responsive user interfaces.
+    - Web Interface: **ReactJs** - Create flexible and responsive user interfaces.
     - API: **FastAPI** - Develop high-performance, easy-to-build and integrate RESTful APIs.
-    - Database: *MongoDB* - Flexible NoSQL database, scalable and capable of handling large volumes of data.
+    - Database: **MongoDB** - Flexible NoSQL database, scalable and capable of handling large volumes of data.
     - Web application architecture:
     <img src= images/3tier-architecture.png>
 
