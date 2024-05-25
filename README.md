@@ -97,7 +97,7 @@ Output:
           - Initializes a MongoDB database named vdt2024.
         - Each service has a specified restart policy **unless-stopped** to ensure availability.
           
-    -   Output build command and docker history information of each image:
+-   Output build command and docker history information of each image:
         ```
         docker-compose -f docker-compose.yml up --build
         ```
