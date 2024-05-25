@@ -43,8 +43,8 @@ Requirements:
 
 Output:
 
--   File Dockerfile cho từng dịch vụ kế hệ thống với ba dịch vụ:
-    -   api : Here is Dockerfile with optimized techniques used:
+-   Dockerfile for each service in the three-service system:
+    -   **api** : Here is Dockerfile with optimized techniques used:
       ```
       # Use Python 3.9 slim base image for a lightweight starting point
       FROM python:3.9-slim AS builder
@@ -59,9 +59,39 @@ Output:
 
       CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
       ```
-    -   frontend : [react]
-    -   docker-compose : [docker-compose.yml]
+    -   **frontend** : Here is Dockerfile with optimized techniques used
+      ```
+      FROM node:18.2.0-alpine
 
+      # Set the working directory inside the container
+      WORKDIR /app
+
+      # Copy the entire application code to the container
+      COPY . .
+
+      # Copy package.json and package-lock.json files separately to utilize layer caching
+      COPY package.json package-lock.json ./
+
+      # Install dependencies using npm ci for faster and more reliable builds
+      RUN npm ci
+
+      # Build the application
+      RUN npm run build
+
+      CMD ["npm", "start"]
+      ```
+    -   **docker-compose** :[here](https://github.com/jasmine150720/vdt2024/blob/main/docker-compose.yml)
+    Here's a brief summary of the provided Docker Compose configuration:
+        - Three services are defined: `react`, `fastapi`, and `mongodb`.
+        - `react` service:
+              - Builds the frontend container.
+              - Maps port 3000 of the host to port 3000 of the container.
+              - Links to the fastapi service.
+          
+        - `fastapi` service:
+        - `mongodb` service:
+        - Each service has a specified restart policy **unless-stopped** to ensure availability.
+          
 -   Output câu lệnh build và thông tin docker history của từng image:
 
 
