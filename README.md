@@ -13,14 +13,14 @@
     - Web Interface: **ReactJs** - Create flexible and responsive user interfaces.
     - API: **FastAPI** - Develop high-performance, easy-to-build and integrate RESTful APIs.
     - Database: **MongoDB** - Flexible NoSQL database, scalable and capable of handling large volumes of data.
-    - Web application architecture:
+    - **Web application architecture**:
     <img src= images/3tier-architecture.png>
 
 - ### Output :
     - vdt2024-web source code
     - vdt2024-api source code
     - unit-test source code
-    Demo web application:
+    - Demo web application:
         - List of VDT2024 Cloud students:
         <img src= images/list-students.png>
         - Detele student from the list:
