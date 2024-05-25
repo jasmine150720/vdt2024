@@ -1,10 +1,7 @@
----
-- name: deploy
-  hosts: all
-  become: true
-  gather_facts: true
+- hosts: all
   roles:
     - common
     - mongodb
-    - backend
+    - api
     - frontend
+    - nginx
