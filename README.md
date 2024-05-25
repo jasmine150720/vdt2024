@@ -119,9 +119,12 @@ Requirements:
 Output:
 -   CI tool setup file: [here](https://github.com/jasmine150720/vdt2024/blob/main/.github/workflows/ci.yml)
 -   Output log of CI stream:
-    <img src= images/actions.png>
+    <img src= images/log-ci.png>
 -   Other demo images:
-    
+    - `Automatically run unit test when creating a PR on the main branch`
+     <img src= images/ci-2.png>
+    - `Automatically run unit tests when pushing a commit to a branch`
+     <img src= images/ci-1.png>
 
 ### 3. Automation
 Requirements:
@@ -129,5 +132,5 @@ Requirements:
 - In each role, it is possible to customize the configuration of services through variables.
 - Allows deploying services on different hosts through the inventory file.
 
-### 4. Research topic : Who are you, platform engineering:
+### 4. Research topic : WHO ARE YOU, PLATFORM ENGINEERING
 Thank to KOL Nguyen Hoai Nam for introducing a fresh concept, which sparked inspiration for me to write this topic. For more details:[here]() 
