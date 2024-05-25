@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel
 from bson import ObjectId
 from typing import Optional, Any, Dict
 
@@ -8,7 +8,7 @@ class Student(BaseModel):
     year_of_birth: int
     gender: str
     university: str
-    email: EmailStr
+    email: str
 
     class Config:
         schema_extra = {
@@ -38,7 +38,7 @@ class UpdateStudent(BaseModel):
     year_of_birth: Optional[int]
     gender: Optional[str]
     university: Optional[str]
-    email: Optional[EmailStr]
+    email: Optional[str]
 
     class Config:
         schema_extra = {
