@@ -1,4 +1,4 @@
-    - name: Build and up images nginx
-      command: docker-compose -f  ../docker-compose.yml up -d frontend
-      args:
-        chdir: "{{ playbook_dir }}"
+---
+- include_tasks: config.yml
+- include_tasks: setup.yml
+- include_tasks: service.yml
