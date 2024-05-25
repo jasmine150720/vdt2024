@@ -121,9 +121,9 @@ Output:
 -   Output log of CI stream:
     <img src= images/log-ci.png>
 -   Other demo images:
-    - `Automatically run unit test when creating a PR on the main branch`
+    - Automatically run unit test when creating a PR on the main branch
         <img src= images/ci-2.png>
-    - `Automatically run unit tests when pushing a commit to a branch`
+    - Automatically run unit tests when pushing a commit to a branch
         <img src= images/ci-1.png>
 
 ### 3. Automation
