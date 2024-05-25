@@ -23,4 +23,4 @@ jobs:
             - name: Install local dependencies
               run: pip install -r api/requirements.txt
             - name: Run unit test
-              run: pytest api
+              run: pytest api/test

@@ -1,10 +1,7 @@
----
-- name: deply
-  hosts: all
-  become: true
-  gather_facts: true
+- hosts: all
   roles:
-    - docker
-    - mongodb
-    - frontend
-    - api
+      - commom
+      - mongodb
+      - api
+      - nginx
+      - frontend

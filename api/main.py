@@ -42,7 +42,7 @@ async def import_data_from_json_to_mongodb():
     students = [Student(**record) for record in data]
 
     # Connect to collection MongoDB
-    collection: collection = database["student"]
+    collection = database["student"]
 
     # Remove all data in collection, then add new data
     await collection.delete_many({})

@@ -5,6 +5,13 @@ from main import app
 logging.basicConfig(level=logging.DEBUG)
 client = TestClient(app)
 
+def create_student(test_client):
+    response = test_client.post("/api/v1/students", json=student_data)
+    assert response.status_code == 200
+    student_id = response.json()['data']['id']
+    yield student_id
+    test_client.delete(f"/api/v1/students/{student_id}")
+    
 student_data = {
     "name": "Arthur Xiaomi",
     "year_of_birth": 2000,

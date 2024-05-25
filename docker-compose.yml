@@ -2,7 +2,7 @@ version: '3.8'
 services:
   react:
     build: frontend
-    container_name: presentation_tier
+    container_name: web
     hostname: react
     restart: unless-stopped
     ports:
@@ -12,7 +12,7 @@ services:
 
   fastapi:
     build: api
-    container_name: application_tier
+    container_name: api
     restart: unless-stopped
     ports:
       - "80:80"
@@ -21,7 +21,7 @@ services:
 
   mongodb:
     image: mongo:5.0
-    container_name: data_tier
+    container_name: data
     restart: unless-stopped
     hostname: mongodb
     environment:
