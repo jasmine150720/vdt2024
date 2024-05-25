@@ -17,9 +17,9 @@
     <img src= images/3tier-architecture.png>
 
 - ### Output :
-    - vdt2024-web source code
-    - vdt2024-api source code
-    - unit-test source code
+    - vdt2024-web source code: [here](https://github.com/jasmine150720/vdt2024-web)
+    - vdt2024-api source code[here](https://github.com/jasmine150720/vdt2024-api)
+    - unit-test source code: [here](https://github.com/jasmine150720/vdt2024/tree/main/api/test)
     - Demo web application:
         - `List of VDT2024 Cloud students`:
             <img src= images/list-students.png>
@@ -81,6 +81,7 @@ Output:
       CMD ["npm", "start"]
       ```
     -   **docker-compose** :[here](https://github.com/jasmine150720/vdt2024/blob/main/docker-compose.yml)
+
     Here's a brief summary of the provided Docker Compose configuration:
         - Three services are defined: `react`, `fastapi`, and `mongodb`.
         - `react` service:
@@ -132,5 +133,9 @@ Requirements:
 - In each role, it is possible to customize the configuration of services through variables.
 - Allows deploying services on different hosts through the inventory file.
 
+Ouput:
+- Source code of Ansible: [here](https://github.com/jasmine150720/vdt2024/tree/main/ansible)
+- Deploy log:
+    <img src= images/ansinle.png>
 ### 4. Research topic : WHO ARE YOU, PLATFORM ENGINEERING
-Thank to KOL Nguyen Hoai Nam for introducing a fresh concept, which sparked inspiration for me to write this topic. For more details:[here]() 
+Thank to KOL Nguyen Hoai Nam for introducing a fresh concept, which sparked inspiration for me to write this topic. For more details: [here]() 
