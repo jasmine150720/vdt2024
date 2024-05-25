@@ -44,7 +44,8 @@ Requirements:
 Output:
 
 -   File Dockerfile cho từng dịch vụ kế hệ thống với ba dịch vụ:
-    -   api : [fastapi]
+    -   api :
+      '''Hi heloo'''
     -   frontend : [react]
     -   docker-compose : [docker-compose.yml]
 
