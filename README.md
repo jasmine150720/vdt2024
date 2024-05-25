@@ -21,14 +21,14 @@
     - vdt2024-api source code
     - unit-test source code
     - Demo web application:
-        - List of VDT2024 Cloud students:
+        - `List of VDT2024 Cloud students`:
         <img src= images/list-students.png>
-        - Detele student from the list:
+        - `Detele student from the list`:
         <img src= images/delete-students.png>
-        - Add student to the list:
+        - `Add student to the list`:
          <img src= images/add-student.png>
          <img src= images/add-sucessfully.png>
-        - Modify student infomation:
+        - `Modify student infomation`:
         <img src= images/modify-student.png>
 
 
@@ -84,17 +84,23 @@ Output:
     Here's a brief summary of the provided Docker Compose configuration:
         - Three services are defined: `react`, `fastapi`, and `mongodb`.
         - `react` service:
-              - Builds the frontend container.
-              - Maps port 3000 of the host to port 3000 of the container.
-              - Links to the fastapi service.
-          
+          - Builds the frontend container.
+          - Maps port 3000 of the host to port 3000 of the container.
+          - Links to the fastapi service.          
         - `fastapi` service:
+          - Builds the API container.
+          - Maps port 80 of the host to port 80 of the container.
+          - Depends on the `mongodb` service.
         - `mongodb` service:
+          - Uses the mongo:5.0 image.
+          - Maps port 27017 of the host to port 27017 of the container.
+          - Initializes a MongoDB database named vdt2024.
         - Each service has a specified restart policy **unless-stopped** to ensure availability.
           
--   Output câu lệnh build và thông tin docker history của từng image:
-
-
+    -   Output build command and docker history information of each image:
+        ```
+        docker-compose -f docker-compose.yml up --build
+        ```
 ### 2. Continuous Integration
 
 Yêu cầu:
