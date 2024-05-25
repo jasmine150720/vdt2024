@@ -22,14 +22,14 @@
     - unit-test source code
     - Demo web application:
         - `List of VDT2024 Cloud students`:
-        <img src= images/list-students.png>
+            <img src= images/list-students.png>
         - `Detele student from the list`:
-        <img src= images/delete-students.png>
+            <img src= images/delete-students.png>
         - `Add student to the list`:
-         <img src= images/add-student.png>
-         <img src= images/add-sucessfully.png>
+             <img src= images/add-student.png>
+             <img src= images/add-sucessfully.png>
         - `Modify student infomation`:
-        <img src= images/modify-student.png>
+            <img src= images/modify-student.png>
 
 
 ## II. Triển khai web application sử dụng các DevOps tools & practices
@@ -59,7 +59,7 @@ Output:
 
       CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
       ```
-    -   **frontend** : Here is Dockerfile with optimized techniques used
+    -   **frontend** : Here is Dockerfile with optimized techniques used:
       ```
       FROM node:18.2.0-alpine
 
