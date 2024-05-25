@@ -1,4 +1,4 @@
-- name: restart docker
-  systemd:
-    name: docker
-    state: restarted
+    - name: Build and up images api
+      command: docker-compose -f  ../docker-compose.yml up -d api
+      args:
+        chdir: "{{ playbook_dir }}"
