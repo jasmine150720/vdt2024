@@ -1,4 +1,5 @@
----
-- include_tasks: config.yml
-- include_tasks: setup.yml
-- include_tasks: service.yml
+
+    - name: Build and up images api
+      command: docker-compose -f  ../docker-compose.yml  up -d fastapi
+      args:
+        chdir: "{{ playbook_dir }}"
