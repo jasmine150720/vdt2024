@@ -103,26 +103,31 @@ Output:
   ```  
 -   Docker history information of each image:
     - Docker images:
-      <img src= images/dokcer-images.png>
-    - s
+      <img src= images/docker-images.png>
+    - Docker histoty information:
+      - d
+      - d
+      - d
 
 ### 2. Continuous Integration
 
-Yêu cầu:
+Requirements:
 
--   Tự động chạy unit test khi tạo PR vào branch main
--   Tự động chạy unit test khi push commit lên một branch
-    Output:
--   File setup công cụ CI
-    -   source : [ci file]
--   Output log của luồng CI
+-   Automatically run unit test when creating a PR on the main branch.
+-   Automatically run unit tests when pushing a commit to a branch.
+
+Output:
+-   CI tool setup file: [here](https://github.com/jasmine150720/vdt2024/blob/main/.github/workflows/ci.yml)
+-   Output log of CI stream:
     <img src= images/actions.png>
-
--   Các hình ảnh demo khác
+-   Other demo images:
     
 
-
 ### 3. Automation
+Requirements:
+- Write ansible playbooks to deploy docker images of web services, api, db, each role for each service.
+- In each role, it is possible to customize the configuration of services through variables.
+- Allows deploying services on different hosts through the inventory file.
 
-
-### 4. Research topic : Who are you, platform engineering
+### 4. Research topic : Who are you, platform engineering:
+Thank to KOL Nguyen Hoai Nam for introducing a fresh concept, which sparked inspiration for me to write this topic. For more details:[here]() 
