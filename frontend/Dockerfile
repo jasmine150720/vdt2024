@@ -12,7 +12,6 @@ COPY package.json package-lock.json ./
 # Install dependencies using npm ci for faster and more reliable builds
 RUN npm ci
 
-# Build the application
 RUN npm run build
 
 # Specify the default command to run the application
