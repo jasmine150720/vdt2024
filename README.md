@@ -139,4 +139,4 @@ Ouput:
 - Successfully deploy on 2 different hosts:
     <img src= images/ansible.png>
 ### 4. Research topic : WHO ARE YOU, PLATFORM ENGINEERING
-Thank to KOL Nguyen Hoai Nam for introducing a fresh concept, which sparked inspiration for me to write this topic. For more details: [here]() 
+Thank to KOL Nguyen Hoai Nam for introducing a fresh concept, which sparked inspiration for me to write this topic. For full details: [here]() 
